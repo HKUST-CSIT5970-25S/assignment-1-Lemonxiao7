@@ -25,7 +25,7 @@
     | ----------- | --------------- | ------------------ |
     | `t2.micro` |    889.80 events/sec      |       3570.36 MiB/sec     |
     | `t2.medium`  |      885.97 events/sec           |        3589.40 MiB/sec            |
-    | `c5d.large` |         events/sec        |          MiB/sec          |
+    | `c5d.large` |        449.49 events/sec        |       14735.28   MiB/sec          |
 
     > Region: US East (N. Virginia). Use `Ubuntu Server 22.04 LTS (HVM)` as AMI.
 
