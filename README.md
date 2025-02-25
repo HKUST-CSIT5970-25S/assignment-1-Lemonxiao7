@@ -35,8 +35,8 @@
 
     | Type                      | TCP b/w (Mbps) | RTT (ms) |
     | ------------------------- | -------------- | -------- |
-    | `t3.medium` - `t3.medium` |                |          |
-    | `m5.large` - `m5.large`   |                |          |
+    | `t3.medium` - `t3.medium` |       4100       |    min/avg/max/mdev = 0.178/0.207/0.284/0.023      |
+    | `m5.large` - `m5.large`   |        2200        |       min/avg/max/mdev = 0.781/0.791/0.797/0.005   |
     | `c5n.large` - `c5n.large` |                |          |
     | `t3.medium` - `c5n.large` |                |          |
     | `m5.large` - `c5n.large`  |                |          |
