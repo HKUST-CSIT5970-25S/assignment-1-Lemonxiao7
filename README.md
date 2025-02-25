@@ -5,9 +5,9 @@
 
 ---
 
-### Name: 
-### Student Id: 
-### Email: 
+### Name: LI, Mengxiao
+### Student Id: 21112698
+### Email: mlieo@connect.ust.hk
 
 ---
 
@@ -23,7 +23,7 @@
 
     | Size        | CPU performance | Memory performance |
     | ----------- | --------------- | ------------------ |
-    | `t2.micro` |                 |                    |
+    | `t2.micro` |    889.80        |       3570.36      |
     | `t2.medium`  |                 |                    |
     | `c5d.large` |                 |                    |
 
