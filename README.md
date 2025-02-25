@@ -36,11 +36,11 @@
     | Type                      | TCP b/w (Mbps) | RTT (ms) |
     | ------------------------- | -------------- | -------- |
     | `t3.medium` - `t3.medium` |       4100       |    min/avg/max/mdev = 0.178/0.207/0.284/0.023      |
-    | `m5.large` - `m5.large`   |        2200        |       min/avg/max/mdev = 0.781/0.791/0.797/0.005   |
-    | `c5n.large` - `c5n.large` |                |          |
-    | `t3.medium` - `c5n.large` |                |          |
-    | `m5.large` - `c5n.large`  |                |          |
-    | `m5.large` - `t3.medium`  |                |          |
+    | `m5.large` - `m5.large`   |      3940     |      |min/avg/max/mdev = 0.252/0.280/0.374/0.037
+    | `c5n.large` - `c5n.large` |        4960        |     min/avg/max/mdev = 0.154/0.165/0.176/0.007      |
+    | `t3.medium` - `c5n.large` |     2200           |    min/avg/max/mdev = 0.781/0.791/0.797/0.005      |
+    | `m5.large` - `c5n.large`  |      2960          |     min/avg/max/mdev = 0.414/0.435/0.471/0.017       |
+    | `m5.large` - `t3.medium`  |        1380        |    min/avg/max/mdev = 1.063/1.100/1.148/0.025 ms      |
 
     > Region: US East (N. Virginia). Use `Ubuntu Server 22.04 LTS (HVM)` as AMI. Note: Use private IP address when using iPerf within the same region. You'll need iPerf for measuring TCP bandwidth and Ping for measuring Round-Trip time.
 
