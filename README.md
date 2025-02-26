@@ -54,7 +54,7 @@
     | `m5.large` - `c5n.large`  |      2960          |     min/avg/max/mdev = 0.414/0.435/0.471/0.017       |
     | `m5.large` - `t3.medium`  |        1380        |    min/avg/max/mdev = 1.063/1.100/1.148/0.025     |
 
-    > Region: US East (N. Virginia). Use `Ubuntu Server 22.04 LTS (HVM)` as AMI. Note: Use private IP address when using iPerf within the same region. You'll need iPerf for measuring TCP bandwidth and Ping for measuring Round-Trip time.
+    > Region: US East (N. Virginia). Use `Ubuntu Server 22.04 LTS (HVM)` as AMI. Note: Use private IP address when using iPerf within the same region. You'll need iPerf for measuring TCP bandwidth and Ping for measuring Round-Trip time.  
     > **Answer and analyze:**  
     > For the same type instances, the network performance generally shows a higher TCP bandwidth and lower RTT. The c5n.large - c5n.large configuration offers the best TCP bandwidth at 4960 Mbps with a very low RTT. According to the different type instances, there is a noticeable drop in both TCP bandwidth and RTT. TCP bandwidth drops significantly when mixing instance types (e.g., t3.medium - c5n.large shows a decrease to 2200 Mbps from 4100 Mbps in the same type comparison).RTT increases when different types are involved, with the highest RTT observed in the m5.large - t3.medium combination at 1.100 ms, compared to the very low RTT values within the same type configurations.  
 
@@ -66,7 +66,7 @@
     | N. Virginia - N. Virginia |          9520      |     min/avg/max/mdev = 0.090/0.096/0.118/0.007      |
     | Oregon - Oregon           |        9160        |     min/avg/max/mdev = 0.098/0.107/0.116/0.006     |
  
-    > Region: US East (N. Virginia), US West (Oregon). Use `Ubuntu Server 22.04 LTS (HVM)` as AMI. All instances are `c5.large`. Note: Use public IP address when using iPerf within the same region.
+    > Region: US East (N. Virginia), US West (Oregon). Use `Ubuntu Server 22.04 LTS (HVM)` as AMI. All instances are `c5.large`. Note: Use public IP address when using iPerf within the same region.  
     > **Answer and analyze:**  
     > Cross-region connection (e.g., N. Virginia - Oregon) has much worse network performance, with a TCP bandwidth of only 33 Mbps and a high RTT of around 59.8 ms. This indicates that data transmission between different regions is limited in bandwidth and experiences higher latency.  
     > Same-region connections (e.g., N. Virginia - N. Virginia and Oregon - Oregon) offer much higher TCP bandwidth and lower RTT, indicating very efficient network communication within the same region.  
